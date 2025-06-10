@@ -4,141 +4,131 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arcos Landscaping and Lawncare</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Montserrat', sans-serif;
       background-color: #ffffff;
-      color: #000000;
+      color: #222;
     }
 
     header {
-      background-color: #2e7d32;
+      background-color: #1b5e20;
       color: white;
-      padding: 1.5em;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #000000;
+      padding: 1.5em 2em;
       display: flex;
-      justify-content: center;
-      gap: 2em;
-      padding: 1em 0;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
     }
 
     nav a {
-      color: white;
+      color: #fff;
+      margin-left: 1.5em;
       text-decoration: none;
       font-weight: bold;
     }
-
     nav a:hover {
-      text-decoration: underline;
+      color: #a5d6a7;
     }
 
     .hero {
-      background-color: #c8e6c9;
-      padding: 4em 2em;
+      background: url('https://images.unsplash.com/photo-1599557713095-ec07b5a8e04d') center/cover no-repeat;
+      color: white;
       text-align: center;
+      padding: 6em 2em;
     }
-
     .hero h1 {
       font-size: 3em;
-      margin: 0 0 0.5em 0;
+      margin-bottom: 0.3em;
     }
-
     .hero p {
       font-size: 1.2em;
-      max-width: 600px;
-      margin: 0 auto;
     }
 
-    .about, .payments, .contact {
-      padding: 2em;
-      background-color: #f9f9f9;
-      text-align: center;
+    .section {
+      padding: 3em 2em;
+      max-width: 1100px;
+      margin: auto;
     }
-
-    .about h2, .payments h2, .contact h2 {
+    .section h2 {
       font-size: 2em;
-      margin-bottom: 0.5em;
-    }
-
-    .about p, .payments p, .contact p {
-      font-size: 1.1em;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    .video-section {
-      padding: 2em;
+      margin-bottom: 1em;
       text-align: center;
-      background-color: #f0f0f0;
     }
-
-    .video-section h2 {
-      margin-bottom: 1.5em;
-    }
-
-    .tiktok-wrapper {
+    .video-section .tiktok-wrapper,
+    .grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 2em;
+      gap: 1.5em;
+    }
+    .grid-item {
+      flex: 1 1 250px;
+      border: 1px solid #ddd;
+      padding: 1em;
+      background: #f8f8f8;
+      text-align: center;
+    }
+
+    .about, .payments, .contact {
+      background-color: #f1f8e9;
     }
 
     .payment-icons {
-      margin-top: 1.5em;
+      margin-top: 1em;
       line-height: 2;
       font-size: 1.2em;
     }
 
     footer {
-      background-color: #000000;
+      background-color: #1b5e20;
       color: white;
       text-align: center;
       padding: 2em 1em;
-      margin-top: 2em;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Arcos Landscaping and Lawncare</h1>
-    <p>Where Your Lawn Meets Precision</p>
+    <h1>Arcos Landscaping</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#payments">Payments</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
-
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#about">About Us</a>
-    <a href="#payments">Payments</a>
-    <a href="#contact">Contact</a>
-  </nav>
 
   <section class="hero">
     <h1>Lawn Perfection Starts Here</h1>
-    <p>Professional and affordable lawn care tailored to your needs. We turn grass into greatness.</p>
+    <p>Professional and affordable landscaping services across North Carolina</p>
   </section>
 
-  <section class="about" id="about">
+  <section class="section about" id="about">
     <h2>About Us</h2>
-    <p>Arcos Landscaping and Lawncare is proudly owned and operated by Florentino Arcos. Based out of Winston-Salem, we serve all of North Carolina with top-tier landscaping services, from mowing and maintenance to full-scale lawn transformations. Trust us to treat your yard like our own.</p>
+    <p>Arcos Landscaping and Lawncare is proudly owned and operated by Florentino Arcos. Based in Winston-Salem, we proudly serve all of North Carolina with top-tier lawn care and landscaping solutions. From weekly maintenance to full transformations, your yard is our mission.</p>
   </section>
 
-  <section class="video-section">
-    <h2>See Us in Action!</h2>
+  <section class="section video-section">
+    <h2>See Us in Action</h2>
     <div class="tiktok-wrapper">
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@florencee_o/video/7495192233935736106" data-video-id="7495192233935736106" style="max-width: 325px; min-width: 325px;"><section>Loading…</section></blockquote>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@florencee_o/video/7507402263850126635" data-video-id="7507402263850126635" style="max-width: 325px; min-width: 325px;"><section>Loading…</section></blockquote>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@florencee_o/video/7512048636461649198" data-video-id="7512048636461649198" style="max-width: 325px; min-width: 325px;"><section>Loading…</section></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@florencee_o/video/7495192233935736106" data-video-id="7495192233935736106" style="max-width: 325px;"><section>Loading…</section></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@florencee_o/video/7507402263850126635" data-video-id="7507402263850126635" style="max-width: 325px;"><section>Loading…</section></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@florencee_o/video/7512048636461649198" data-video-id="7512048636461649198" style="max-width: 325px;"><section>Loading…</section></blockquote>
     </div>
     <script async src="https://www.tiktok.com/embed.js"></script>
   </section>
 
-  <section class="payments" id="payments">
+  <section class="section payments" id="payments">
     <h2>Payment Options</h2>
-    <p>We make it easy to pay however you prefer:</p>
+    <p>We accept multiple convenient payment methods:</p>
     <div class="payment-icons">
       💵 <strong>Cash App:</strong> <a href="https://cash.app/$FlorentinoArcos" target="_blank">$FlorentinoArcos</a><br>
       🍎 <strong>Apple Pay:</strong> Send to <strong>(743) 444-0269</strong><br>
@@ -148,9 +138,9 @@
     </div>
   </section>
 
-  <section class="contact" id="contact">
+  <section class="section contact" id="contact">
     <h2>Contact Us</h2>
-    <p>Call or text us to schedule your service or get a free quote:</p>
+    <p>Call or text us to schedule a service or get a free quote:</p>
     <p><strong>(743) 444-0269</strong></p>
   </section>
 
