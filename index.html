@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arcos Landscaping and Lawncare</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
     }
+
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -24,6 +25,7 @@
       justify-content: space-between;
       align-items: center;
     }
+
     header h1 {
       margin: 0;
       font-size: 1.5em;
@@ -35,21 +37,40 @@
       text-decoration: none;
       font-weight: bold;
     }
+
     nav a:hover {
       color: #a5d6a7;
     }
 
     .hero {
-      background: url('hero-image.png') center/cover no-repeat;
-      color: white;
+      position: relative;
       text-align: center;
-      padding: 6em 2em;
+      color: white;
     }
-    .hero h1 {
+
+    .hero img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 2em;
+      border-radius: 10px;
+    }
+
+    .hero-text h1 {
+      margin: 0;
       font-size: 3em;
-      margin-bottom: 0.3em;
     }
-    .hero p {
+
+    .hero-text p {
       font-size: 1.2em;
     }
 
@@ -58,23 +79,10 @@
       max-width: 1100px;
       margin: auto;
     }
+
     .section h2 {
       font-size: 2em;
       margin-bottom: 1em;
-      text-align: center;
-    }
-    .video-section .tiktok-wrapper,
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.5em;
-    }
-    .grid-item {
-      flex: 1 1 250px;
-      border: 1px solid #ddd;
-      padding: 1em;
-      background: #f8f8f8;
       text-align: center;
     }
 
@@ -82,10 +90,18 @@
       background-color: #f1f8e9;
     }
 
+    .video-section .tiktok-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5em;
+    }
+
     .payment-icons {
       margin-top: 1em;
       line-height: 2;
       font-size: 1.2em;
+      text-align: center;
     }
 
     footer {
@@ -93,6 +109,7 @@
       color: white;
       text-align: center;
       padding: 2em 1em;
+      margin-top: 2em;
     }
   </style>
 </head>
@@ -107,9 +124,11 @@
   </header>
 
   <section class="hero">
-    <img src="hero-image.png" alt="Lawncare Work" style="width: 100%; max-height: 400px; object-fit: cover;">
-    <h1>Lawn Perfection Starts Here</h1>
-    <p>Professional and affordable landscaping services across North Carolina</p>
+    <img src="hero-image.png" alt="Lawncare hero image" />
+    <div class="hero-text">
+      <h1>Lawn Perfection Starts Here</h1>
+      <p>Professional and affordable landscaping services across North Carolina</p>
+    </div>
   </section>
 
   <section class="section about" id="about">
@@ -150,6 +169,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
